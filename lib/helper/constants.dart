@@ -1,0 +1,2 @@
+const CMC_PRO_API_KEY = "aacf6a28-8520-4b06-8d50-ac6cb9575677";
+const API_KEY = "aacf6a28-8520-4b06-8d50-ac6cb9575677";
