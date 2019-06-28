@@ -20,7 +20,7 @@ class HomeProvide extends BaseProvide {
 
   Observable loadTransactions() => _repo
       .loadTransaction()
-      .doOnData( (r) => response = Transaction.map(r))
+      .doOnData( (r) => response = Transaction.fromJson(r))
       .doOnError((e, stacktrace) {
         if (e is DioError) {
           print(e.message);

@@ -9,7 +9,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  var _title = "";
+  var _title = "Transaction";
 
   @override
   void initState() {

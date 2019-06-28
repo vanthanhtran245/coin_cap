@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:coin_cap/model/transaction.dart';
 
-class TransactionItemView extends BaseWidgetAdapter<TransactionItem> {
-  final TransactionItem _item;
+class TransactionItemView extends BaseWidgetAdapter<Transaction> {
+  final Transaction _item;
   TransactionItemView(this._item);
 
   @override
@@ -13,10 +13,10 @@ class TransactionItemView extends BaseWidgetAdapter<TransactionItem> {
       children: <Widget>[
         ListTile(
           title: Text(_item.name),
-          subtitle: Text(_item.numMarketPairs.toString()),
+          subtitle: Text(_item.currentPrice.toString()),
           leading: Container(
               margin: EdgeInsets.only(left: 6.0),
-              child: Image.network(_item.symbol, height: 50.0, fit: BoxFit.fill)
+              child: Image.network(_item.image, height: 50.0, fit: BoxFit.fill)
           ),
         ),
         Divider()
